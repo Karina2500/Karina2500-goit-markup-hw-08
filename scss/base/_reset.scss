@@ -1,19 +1,40 @@
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
 }
-.image {
-	display: block;
-	width: 100%;
-	height: auto;
+
+ul,
+li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 *,
 *::after,
 *::before {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
-.addreses{
-    color: var(--invert-text-color);
-    }
