@@ -561,7 +561,7 @@ html {
   }
 }
 .footer-form__input {
-  width: 358px;
+  width: 325px;
   height: 50px;
   border-radius: 4px;
   padding-left: 16px;
@@ -1531,8 +1531,6 @@ footer {
 }
 
 .main-page {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/imagin.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imagin.jpg);
   max-width: 1600px;
   min-width: 320px;
   width: 100%;
@@ -1545,18 +1543,6 @@ footer {
      object-fit: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .main-page {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../componenet/_menu.scss);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../componenet/_menu.scss);
-  }
-}
-@media (min-width: 1200px) {
-  .main-page {
-    padding: 200px 0;
-    max-height: none;
-  }
 }
 .main-page__title {
   font-weight: 900;
@@ -1599,6 +1585,50 @@ footer {
 @media (min-width: 1200px) {
   .main-page__button {
     padding: 10px 32px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .main-page {
+    max-width: 480px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile.jpg);
+  }
+}
+@media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
+  .main-page {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .main-page {
+    max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .main-page {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 768px) {
+  .main-page {
+    max-width: 1600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/comp.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/comp.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-page {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/comp2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/comp2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 1200px) {
+  .main-page {
+    padding: 200px 0;
   }
 }
 

@@ -1,5 +1,6 @@
+$main-image-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
 .main-page {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imagin.jpg) ;
     max-width: 1600px;
     min-width: 320px;
     width: 100%;
@@ -11,17 +12,6 @@
     object-fit: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../componenet/_menu.scss) ;
-    }
-    @media (min-width: 1200px){
-        padding: 200px 0;
-        max-height: none;
-      }
-
 
       &__title {
         font-weight: 900;
@@ -60,4 +50,50 @@
             padding: 10px 32px ;
           }
     }
+
+    @media screen and (max-width: 479px) {
+      max-width: 480px;
+      background-image: $main-image-gradient,
+      url(../images/mobile.jpg);
+    }
+
+    @media screen and (max-width: 479px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (max-width: 479px) and (min-resolution: 192dpi),
+    screen and (max-width: 479px) and (min-resolution: 2dppx) {
+      background-image: $main-image-gradient,
+      url(../images/mobile2x.jpg);
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      max-width: 768px;
+      background-image: $main-image-gradient,
+      url(../images/tablet.jpg);
+
+      @media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
+   background-image: $main-image-gradient,
+      url(../images/tablet2x.jpg);
+}
+
+@media screen and (min-width: 768px) {
+  max-width: 1600px;
+  background-image: $main-image-gradient,
+      url(../images/comp.jpg);
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  background-image: $main-image-gradient,
+      url(../images/comp2x.jpg);
+}
+
+@media screen and (min-width: 1200px) {
+  padding: 200px 0;
+}
+}
 }
