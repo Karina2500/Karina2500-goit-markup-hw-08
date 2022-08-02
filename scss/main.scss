@@ -1,21 +1,44 @@
-@import "./utils/visually-hidden";
+@import "./utils/hidden";
+@import "./utils/placeholders";
 @import "./utils/variables";
 
 @import "./base/common";
 @import "./base/reset";
 
+@import "./componenet/backdrop-form";
+@import "./componenet/backdrop-title";
 @import "./componenet/backdrop";
+@import "./componenet/button-section";
+@import "./componenet/close-button";
+@import "./componenet/contacts";
 @import "./componenet/container";
+@import "./componenet/do-card";
+@import "./componenet/feedback";
+@import "./componenet/footer-connexion";
+@import "./componenet/footer-form";
+@import "./componenet/footer-media";
+@import "./componenet/form-privacy";
+@import "./componenet/last-item";
+@import "./componenet/logo-menu";
+@import "./componenet/logo";
+@import "./componenet/media-list";
+@import "./componenet/menu";
+@import "./componenet/mobile-menu";
+@import "./componenet/regular-clients";
 @import "./componenet/section";
+@import "./componenet/service-card";
+@import "./componenet/studio-list";
+@import "./componenet/team-member";
+@import "./componenet/title";
 
-@import "./loyout/benefits";
-@import "./loyout/client";
-@import "./loyout/experience";
+@import "./loyout/clients-section";
+@import "./loyout/footer-section";
 @import "./loyout/footer";
-@import "./loyout/gallery";
 @import "./loyout/header";
-@import "./loyout/hero";
-@import "./loyout/logo";
-@import "./loyout/modal";
-@import "./loyout/radio";
-@import "./loyout/team"; 
+@import "./loyout/main-page";
+@import "./loyout/portfolio-section";
+@import "./loyout/presentation-section";
+@import "./loyout/service-section";
+@import "./loyout/studio-facts-section";
+@import "./loyout/team-section";
+
